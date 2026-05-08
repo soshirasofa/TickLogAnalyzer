@@ -5,7 +5,13 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <LangVersion>latest</LangVersion>
+    <PublishDir>$(MSBuildThisFileDirectory)publish\</PublishDir>
   </PropertyGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="TickLogAnalyzer.Tests" />
+    <Compile Remove="tests/**" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="ConsoleAppFramework" Version="5.7.13">
