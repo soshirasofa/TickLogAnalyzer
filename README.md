@@ -41,7 +41,7 @@ dotnet run --project . -- summary --tlog C:\ticks\XAUUSDm.tlog --cadence-ms 1,10
 ```
 
 ```pwsh
-dotnet run --project C:\Users\ryosuke\Documents\cAlgo-dev\MT5\TickLogAnalyzer\TickLogAnalyzer.csproj -- summary --tlog C:\Users\ryosuke\Documents\cAlgo-dev\MT5\Mt5.Simulator\capture\20260426_152546\XAUUSDm\20260426_220203_XAUUSDm_Exness-MT5Trial5.tlog --cadence-ms 1,10,33,100,250,500 --json-out .\tickobsv.json
+dotnet run --project ~\Documents\cAlgo-dev\MT5\TickLogAnalyzer\TickLogAnalyzer.csproj -- summary --tlog ~\Documents\cAlgo-dev\MT5\Mt5.Simulator\capture\20260426_152546\XAUUSDm\20260426_220203_XAUUSDm_Exness-MT5Trial5.tlog --cadence-ms 1,10,33,100,250,500 --json-out .\tickobsv.json
 ```
 
 出力内容は、symbol、broker、source kind、digits、tick size、price scale、record count、first / last tick、duration、平均 tick/sec、bid / ask min max、spread percentile、timestamp 単調性、重複 timestamp 数、大きな gap、高密度 window、cadence 別の概算観測率である。
