@@ -2,7 +2,7 @@
 
 # TickLogAnalyzer
 
-`.tlog` の tick 密度、期間、価格・spread、timestamp の偏りを確認し、必要に応じて検証用 `.tlog` を分割・切り出しする CLI ツールである。Simulator 専用ではなく、live 運用で取得した `.tlog` の確認にも使用する独立 tool である。
+`.tlog` の tick 密度、期間、価格・spread、timestamp の偏りを確認し、必要に応じて検証用 `.tlog` を分割・切り出しする CLI ツール。
 
 主な用途は以下である。
 
